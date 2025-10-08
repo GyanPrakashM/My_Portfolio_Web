@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS Styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#home" class="logo">Portfolio</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Full-Stack Developer</h1>
+      <p>Hello, I'm <span class="highlight-name">Gyan Prakash Mishra</span>.</p>
+      <p>I build responsive, fast, and modern web applications using the latest technologies.</p>
+      <p class="highlight">Specializing in full-stack development with a focus on clean code and great user experience.</p>
+      
+      <div class="buttons">
+        <a href="#contact" class="cta-button">Let's Connect</a>
+        <a href="resume.pdf
+        " download class="resume-button"><i class="fas fa-download"></i> Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="profile" class="profile-img" />
+    </div>
+  </section>
+ 
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Web Developer</h2>
+    <div class="main-skill-card">
+      <div class="skill-card">
+        <i class="fas fa-code"></i>
+        <h3>Frontend Development</h3>
+        <p>React, HTML, CSS, JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-server"></i>
+        <h3>Backend Development</h3>
+        <p>Node.js, MongoDB, Express.js</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Languages</h3>
+        <p>C++ , C , Python</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="project1.png" alt="Project Screenshot">
+        <div class="project-info">
+          <h3>Airbnd Clone</h3>
+          <p>A responsive personal airbnb built using  MERN stack and lot,s of latest technology.</p>
+          <a href="https://airbnb-0z3t.onrender.com" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+<section id="certificates" class="certificates">
+  <h2>My Certificates</h2>
+  <div class="certificate-grid">
+    <div class="certificate-card">
+      <img src="certificate1.jpg" alt="Certificate 1">
+      <div class="certificate-info">
+        <h3>Course Name 1</h3>
+        <p>Completed in 2025 - Description if needed</p>
+        <a href="WebDevelopment.pdf" target="_blank" class="certificate-link">View Certificate</a>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <img src="certificate2.jpg" alt="Certificate 2">
+      <div class="certificate-info">
+        <h3>Course Name 2</h3>
+        <p>Completed in 2025 - Description if needed</p>
+        <a href="certificate2.pdf" target="_blank" class="certificate-link">View Certificate</a>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Let's Connect</h2>
+  <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+
+<form action="https://formspree.io/f/xnngbnkk" method="POST" onsubmit="alert('Message sent successfully!');" class="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+  <button type="submit" class="send-btn">Send Message</button>
+</form>
+
+
+</section>
+
+<!-- Chatbot Logo/Button -->
+<div id="chatbot">
+  <div id="chatbot-icon"><i class="fas fa-robot"></i></div>
+  <div id="chatbot-window">
+    <div id="chatbot-header">
+      <span>Mini Assistant</span>
+      <span id="chatbot-close">&times;</span>
+    </div>
+    <div id="chatbot-messages">
+      <div class="bot-message">Hello! I'm here to help. What would you like to do?</div>
+    </div>
+    <div id="chatbot-options">
+      <button data-action="home">Go to Home</button>
+      <button data-action="projects">View Projects</button>
+      <button data-action="resume">Download Resume</button>
+      <button data-action="contact">Contact Me</button>
+      <button data-action="other">Other</button>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Gyan. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/GyanPrakashM/"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/gyan-prakash-mishra-476111293/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/gyan_prakash031/"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
